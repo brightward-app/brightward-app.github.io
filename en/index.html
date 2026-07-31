@@ -26,18 +26,23 @@
 <body>
 <p class="lang"><a href="../">简体中文</a> · <a href="../zh-hant/">繁體中文</a> · <a href="./terms/">Terms</a> · <a href="../support/">Support</a></p>
 <h1>Brightward Privacy Policy</h1>
-<p class="meta">Effective date: July 16, 2026</p>
+<p class="meta">Effective date: July 31, 2026</p>
 
-<p>Brightward is a local-first app with no servers of its own. Our principle is simple: your data belongs to you and stays on your device by default.</p>
+<p>Brightward is a local-first app with no servers of its own. Our principle is simple: your data belongs to you — it lives on your own device and syncs only inside your own iCloud account, where we cannot reach it.</p>
 
 <h2>What we store, and where</h2>
-<p>Your course progress, practice records, journal entries, mood check-ins, sunshine and achievements, and app settings are stored only in your device&#x27;s local storage. Brightward has no accounts and no backend — we cannot view, collect, or back up any of your content.</p>
+<p>Your course progress, practice records, journal entries, mood check-ins, sunshine and achievements are stored in your device&#x27;s local storage and synced automatically to your own iCloud account through Apple&#x27;s iCloud (see the next section). App settings such as language and appearance stay on the device and are not synced. Brightward has no accounts and no backend — we cannot view, collect, or back up any of your content.</p>
+
+<h2>iCloud sync</h2>
+<p>So that you can pick up where you left off on a new phone, Brightward syncs your data through Apple&#x27;s CloudKit <strong>private database</strong>. That database belongs to your iCloud account, is hosted by Apple, and can only be read by your own devices — Brightward&#x27;s developer <strong>cannot access, view, or export</strong> anything in it, and the data never passes through any server of ours (we have none).</p>
+<p>Within it, journal bodies, practice content, the text you send to and receive from the AI reframe feature, and the free text you write in &quot;Name the Pain&quot; and &quot;Face Your Anxiety&quot; additionally use CloudKit <strong>field-level encryption</strong>, so not even Apple can read those fields in the clear.</p>
+<p>Sync is on by default, requires no setup, and costs nothing extra. If your device is not signed in to iCloud, or you turn Brightward off under Settings → Apple Account → iCloud, the app runs entirely on device with no loss of functionality. You can see the current sync status on the Me tab.</p>
 
 <h2>Cloud AI (optional, with your explicit consent)</h2>
 <p>The &quot;Reframe&quot; and &quot;Name the Pain&quot; features can optionally use cloud AI. Only after you explicitly consent the first time you use either of them, the text you type for that request is sent over an encrypted connection to the third-party AI service Volcano Engine Ark (privacy policy: <a href="https://www.volcengine.com/trust/privacy" rel="noopener">https://www.volcengine.com/trust/privacy</a>) solely to generate a response. Nothing that identifies you is attached, and the app keeps none of this text anywhere off your device. You can decline cloud AI entirely — the app falls back to built-in guidance, and everything else works normally.</p>
 
 <h2>Voice journaling</h2>
-<p>Speech is transcribed entirely on your device (using Apple&#x27;s speech recognition). Neither audio nor transcripts ever leave the device.</p>
+<p>Speech is transcribed entirely on your device (using Apple&#x27;s speech recognition). The recording never leaves the device and is never saved. Only the entry you choose to keep is stored, and it syncs through your own iCloud like any other journal entry.</p>
 
 <h2>Notifications and alarms</h2>
 <p>Journal reminders and the happiness alarm are local notifications / system alarms. No server is involved.</p>
@@ -49,7 +54,7 @@
 <p>No ads, no third-party analytics SDKs, no tracking, no selling of data, no device identifiers collected.</p>
 
 <h2>Deleting your data</h2>
-<p>Me → Clear All Data erases everything stored locally in one tap. Deleting the app removes all data as well.</p>
+<p>Me → Clear All Data erases everything in one tap, and the deletion propagates to your iCloud private database and your other devices. Deleting the app removes only the local copy; to clear the iCloud copy as well, run Clear All Data before deleting the app, or remove Brightward&#x27;s data under Settings → Apple Account → iCloud → Manage Account Storage.</p>
 
 <h2>Children</h2>
 <p>Brightward is not designed for children under 13, and we do not knowingly collect personal information from children (in fact, we collect no one&#x27;s personal information).</p>
